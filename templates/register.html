@@ -1,0 +1,25 @@
+{% extends "front.html" %}
+{% block content %}
+    <form action="" method="post">
+        <label>
+            Username
+            <input type="text" name="username" id="" value="{{user}}">
+        </label>
+        <div class="error">{{error}}</div>
+        <label>
+            Password
+            <input type="password" name="password" id="" value="{{password}}">
+        </label>
+        <label>
+            Confirm Password
+            <input type="password" name="confirm_pass" id="" value="{{password}}">
+        </label>
+        <label for="">
+            Email
+            <input type="email" name="email" id="" value="{{email}}">
+        </label>
+        <input type="submit" value="Submit">
+        <hr>
+        <div class="error">{{error}}</div>
+    </form>
+{% endblock %}
